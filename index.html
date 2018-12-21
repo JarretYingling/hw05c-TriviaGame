@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- reset.css -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- page title -->
+  <title>Jarret Yingling - State Capitals Trivia Game</title>
+</head>
+
+<body>
+  <header id="masthead" role="banner">
+    <div class="container">
+      <div class="row m-2">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light col-md-6 offset-md-1" role="navigation">
+          <a class="navbar-brand" href="index.html">Jarret Yingling</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">State Capitals Trivia Game<span class="sr-only">(current)</span></a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="StarWars.html">Other</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="index.html">Crystals Collector</a>
+                  <a class="dropdown-item" href="">Game</a>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </div>
+              </li>
+              -->
+            </ul>
+          </div>
+        </nav>
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </header>
+
+  <div id="main-container" class="container" role="main">
+    <div class="row m-2">
+      <section id="rules" class="pt-3 text-success bg-light col-md-7 offset-md-1">
+        <p></p>
+      </section>
+    </div><!-- end row -->
+
+    <div class="row m-2 h-100">
+      <section class="h-175 pt-4 text-white bg-danger col-md-7 offset-md-1">
+        <header>
+          <h2>State Capitals Trivia</h2>
+          <h2><span>What's the capital of: </span><span id="target"></span><span> ?</span></h2>
+        </header>
+      </section>
+    </div><!-- end row -->
+
+    <div class="row m-2">
+      <section class="h-175 pt-2 bg-white col-5 col-md-4 offset-md-1">
+        <p id="0" class="answer"></p>
+        <p id="1" class="answer"></p>
+        <p id="2" class="answer"></p>
+        <p id="3" class="answer"></p>
+      </section>
+      <section id="record" class="h-175 bg-white col-4 col-md-2 offset-2 offset-md-1">
+        <div class="row pt-3">
+          <div class="col-8 col-lg-6">Right:</div>
+          <div id="correct" class="col-4 col-lg-6">0</div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-8 col-lg-6">Wrong:</div>
+          <div id="incorrect" class="col-4 col-lg-6">0</div>
+        </div>
+        <div class="row pt-3">
+          <div id="result" class="col-12"></div>
+        </div>
+      </section>
+    </div><!-- end row -->
+    <!--
+    <div class="row m-2">
+      <div id="red-crystal" class="col-3 col-md-2 offset-md-1">
+        <img src="assets/img/red_crystal.jpg" alt="red crystal" id="red" class="crystal">
+      </div>
+      <div id="blue-crystal" class="col-3 col-md-2">
+        <img src="assets/img/blue_crystal.jpg" alt="blue crystal" id="blue" class="crystal">
+      </div>
+      <div id="yellow-crystal" class="col-3 col-md-2">
+        <img src="assets/img/yellow_crystal.jpg" alt="yellow crystal" id="yellow" class="crystal">
+      </div>
+      <div id="green-crystal" class="col-3 col-md-2">
+        <img src="assets/img/green_crystal.jpg" alt="green crystal" id="green" class="crystal">
+      </div>
+    </div><!-- end row -->
+
+    <div class="row m-2">
+      <section id="capitals" class="text-white bg-primary align-middle col-md-7 offset-md-1">
+        <h2><span>Timer: </span><span id="timer"><button>click to start</button></span></h2>
+      </section>
+    </div><!-- end row -->
+
+    <div class="row m-2">
+      <section id="win-lose" class="text-white bg-primary align-middle col-md-7 offset-md-1">
+        <h2><span>Wins: </span><span id="wins"></span></h2>
+        <h2><span>Losses: </span><span id="losses"></span></h2>
+      </section>
+    </div><!-- end row -->
+
+  </div><!-- end container -->
+  <footer class="container" role="content info">
+    Copyright &copy;
+  </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- local JavaScript -->
+  <script src="assets/js/jsTriviaGame.js"></script>
+</body>
+
+</html>
