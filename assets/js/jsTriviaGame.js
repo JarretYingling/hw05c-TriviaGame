@@ -7,7 +7,7 @@ $(document).ready(function () {
         max: 49,
         answers: [null, null, null, null],
         correctAnswer: null,
-        target: 3,
+        target: 5,
         limit: 3,
         correct: 0,
         incorrect: 0,
